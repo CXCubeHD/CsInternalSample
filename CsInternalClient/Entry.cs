@@ -8,6 +8,9 @@ namespace Chrones.IO.Samples.CsInternalClient;
 /// </summary>
 public static class Entry
 {
+    /// <summary>
+    /// This method needs to be called from our loader in order to be able to run this client.
+    /// </summary>
     [UnmanagedCallersOnly(EntryPoint = "_Load_CsInternalClient", CallConvs = new[] { typeof(CallConvStdcall) })]
     internal static void Load()
     {
