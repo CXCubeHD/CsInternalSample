@@ -4,6 +4,45 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>Chrones.IO.Samples.CsInternalClient</RootNamespace>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
+    
+    <PropertyGroup>
+        <!-- PublishAot enables the use of NativeAOT when compiled. -->
+        <PublishAot>true</PublishAot>
+
+        <!-- Optional -->
+        
+        <!-- <InvariantGlobalization>true</InvariantGlobalization> -->
+        <!-- <UseSystemResourceKeys>true</UseSystemResourceKeys> -->
+         
+        <!-- <IlcOptimizationPreference>Size</IlcOptimizationPreference> -->
+        <!-- <IlcGenerateStackTraceData>false</IlcGenerateStackTraceData> -->
+         
+        <!-- <DebuggerSupport>false</DebuggerSupport> -->
+        <!-- <EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization> -->
+        <!-- <EventSourceSupport>false</EventSourceSupport> -->
+        <!-- <HttpActivityPropagationSupport>false</HttpActivityPropagationSupport> -->
+        <!-- <MetadataUpdaterSupport>false</MetadataUpdaterSupport> -->
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <!-- Allows to use Dependency Injection -->
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0-preview.7.22375.6" />
+        
+        <!-- Is useful when working with Win32 apis -->
+        <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.2.10-beta">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        
+        <!-- Gives access to WinRT apis -->
+        <!-- 
+            Some apis may be broken (throw weird exceptions) because of IL trimming.
+            https://github.com/microsoft/CsWinRT/issues/373
+        -->
+        <PackageReference Include="Microsoft.Windows.CsWinRT" Version="2.0.0" />
+    </ItemGroup>
 
 </Project>
