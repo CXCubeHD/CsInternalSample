@@ -1,0 +1,3 @@
+[submodule "CsInternalLoader/lib/chr-core"]
+	path = CsInternalLoader/lib/chr-core
+	url = https://github.com/ChronesIO/chr-core
