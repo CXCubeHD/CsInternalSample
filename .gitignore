@@ -1,3 +1,20 @@
+## CUSTOM
+
+.idea/
+
+CsInternalClient/bin/
+CsInternalClient/obj/
+
+CsInternalLoader/.idea/
+CsInternalLoader/cmake-build-debug/
+CsInternalLoader/cmake-build-release/
+CsInternalLoader/cmake-build-msvc-debug/
+CsInternalLoader/cmake-build-msvc-release/
+CsInternalLoader/cmake-build-clang-debug/
+CsInternalLoader/cmake-build-clang-release/
+
+## AUTO-GENERATED
+
 ### C++ template
 # Prerequisites
 *.d

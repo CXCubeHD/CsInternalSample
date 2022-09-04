@@ -1,0 +1,5 @@
+AllocConsole
+FreeConsole
+GetStdHandle
+SetStdHandle
+CreateFile

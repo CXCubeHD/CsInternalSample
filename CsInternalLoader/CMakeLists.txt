@@ -10,4 +10,6 @@ set_target_properties(CsInternalLoader PROPERTIES LINKER_LANGUAGE CXX)
 
 target_link_libraries(CsInternalLoader PUBLIC chr-core)
 
+target_include_directories(CsInternalLoader PUBLIC src/)
+
 add_subdirectory(src)
