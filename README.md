@@ -44,7 +44,7 @@ inline chr::wstr CsInternalClientPath =
 	L"PATH TO NativeAOT C# DLL";
 ```
 
-If you are trying to inject those DLLs into a UWP app then make sure
+If you are trying to inject those DLLs into an UWP app then make sure
 they both have the required file permissions.
 
 Lastly compile the C++ DLL _(CsInternalLoader)_ using CMake.
