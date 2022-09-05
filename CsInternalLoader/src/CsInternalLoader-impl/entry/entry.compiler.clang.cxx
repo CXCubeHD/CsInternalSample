@@ -7,7 +7,7 @@
 
 #include "entry.cc"
 
-static WINAPI auto WinEntry(HMODULE hModule) -> int
+static auto WINAPI WinEntry(HMODULE hModule) -> int
 {
 	// Call out Entry function
 	Chrones::IO::Samples::CsInternalLoader::Entry();
