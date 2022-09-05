@@ -1,6 +1,6 @@
 # License
 
-CXCubeHD is the owns this project and all copyright rights to it. 
+CXCubeHD owns this project and all copyright rights to it. 
 Some third party assets might be under a different license.
 
 You are allowed to clone this repository and make changes to it. 
