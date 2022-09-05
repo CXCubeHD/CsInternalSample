@@ -12,4 +12,6 @@ target_link_libraries(CsInternalLoader PUBLIC chr-core)
 
 target_include_directories(CsInternalLoader PUBLIC src/)
 
+target_compile_options(CsInternalLoader PUBLIC -DNOMINMAX)
+
 add_subdirectory(src)
