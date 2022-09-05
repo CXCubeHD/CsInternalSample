@@ -22,11 +22,16 @@ public static class Entry
     /// </summary>
     public static async void Main()
     {
-        Helpers.ConsoleHelper.CreateOutputConsole();
+        Helpers.ConsoleHelper.CreateConsole();
 
         Console.Title = "CsInternalClient";
         
         Console.WriteLine("Hello World!");
+        
+        Console.Write("What is your name? Name: ");
+        var name = Console.ReadLine();
+        
+        Console.WriteLine("Oh, it looks like your name is: {0}", name);
 
         await Task.Delay(-1);
     }
