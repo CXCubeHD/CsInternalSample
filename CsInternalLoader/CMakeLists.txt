@@ -13,5 +13,6 @@ target_link_libraries(CsInternalLoader PUBLIC chr-core)
 target_include_directories(CsInternalLoader PUBLIC src/)
 
 target_compile_options(CsInternalLoader PUBLIC -DNOMINMAX)
+target_link_directories(CsInternalLoader PUBLIC ../CsInternalClient/bin/Release/net7.0-windows10.0.22621.0/win-x64/native)
 
 add_subdirectory(src)

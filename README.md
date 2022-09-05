@@ -25,7 +25,7 @@ git clone --recursive https://github.com/CXCubeHD/CsInternalSample
 
 You can create the NativeAOT C# DLL _(CsInternalClient)_ using:
 ```bash
-dotnet publish -r win-x64 -c Release
+dotnet publish -r win-x64 -c Release /p:NativeLib=Static /p:SelfContained=true
 ```
 
 If it doesn't say 
