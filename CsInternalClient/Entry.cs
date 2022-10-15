@@ -32,7 +32,7 @@ public static class Entry
         var name = Console.ReadLine();
         
         Console.WriteLine("Oh, it looks like your name is: {0}", name);
-
+        
         await Task.Delay(-1);
     }
 }
