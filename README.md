@@ -57,5 +57,7 @@ That's it now you can inject it!
 
 The license can be found under LICENSE.md.
 
-Please note that currently the license is very strict so please
-make sure to read it.
+~~Please note that currently the license is very strict so please
+make sure to read it.~~
+
+Changes License to MIT
