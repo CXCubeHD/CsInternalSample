@@ -31,10 +31,10 @@
     
     <ItemGroup>
         <!-- Allows to use Dependency Injection -->
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0-preview.7.22375.6" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
         
         <!-- Is useful when working with Win32 apis -->
-        <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.2.63-beta">
+        <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.2.104-beta">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
